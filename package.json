@@ -1,0 +1,35 @@
+{
+  "name": "personality-memory-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for storing memories and personality guidance.",
+  "main": "build/personality-memory-server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node build/personality-memory-server.js",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [
+    "mcp",
+    "language-model",
+    "ai",
+    "personality",
+    "memory"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.7.1",
+    "zod": "^3.23.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.2",
+    "@types/sqlite3": "^3.1.11",
+    "typescript": "^5.4.0",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.0"
+  }
+} 
