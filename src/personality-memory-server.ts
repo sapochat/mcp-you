@@ -314,6 +314,7 @@ loadPersonalityData();
 const server = new McpServer({
   name: "PersonalityMemoryServer",
   version: "1.0.0",
+}, {
   capabilities: {
     resources: {}, // Will define resource capabilities later
     tools: {},     // Will define tool capabilities later
